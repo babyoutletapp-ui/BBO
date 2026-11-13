@@ -11,10 +11,6 @@ binding = "DB"
 database_name = "cff-promotions"
 database_id = "506bc75e-6604-405b-8450-1799555924e9"
 
-[[r2_buckets]]
-binding = "FILES"
-bucket_name = "baby-outlet-promotion-files"
-
 [vars]
 SITE_NAME = "Baby Outlet Promotion Center"
 # Set ADMIN_PASSWORD with: npx wrangler secret put ADMIN_PASSWORD
