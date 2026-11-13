@@ -17,7 +17,10 @@
    <label>Promotion title / ឈ្មោះកម្មវិធី<input name="title" required placeholder="e.g. Black Friday Sale"></label>
    <label>Description / ព័ត៌មានលម្អិត<textarea name="description" rows="3" placeholder="Short promotion details…"></textarea></label>
    <div class="two"><label>Start date / ថ្ងៃចាប់ផ្ដើម<input name="starts_at" type="date" required></label><label>End date / ថ្ងៃបញ្ចប់<input name="ends_at" type="date" required></label></div>
-   <label class="upload">Poster or PDF / រូបភាព ឬ PDF<input name="file" type="file" accept=".jpg,.jpeg,.png,.pdf,image/jpeg,image/png,application/pdf"><small>JPG, PNG or PDF · Maximum 15 MB. Required for new promotions.</small></label>
+<label class="upload">Poster Image URL / តំណភ្ជាប់រូបភាព
+  <input name="image_url" type="url" placeholder="https://example.com/poster.jpg" required>
+  <small>Paste your public image URL here.</small>
+</label>
    <div id="file-current" class="muted"></div><div id="form-error" class="error"></div>
    <div class="actions"><button class="primary" id="save-promo">Save draft</button><button type="button" class="outline hidden" id="cancel-edit">Cancel edit</button></div>
   </form></div>
