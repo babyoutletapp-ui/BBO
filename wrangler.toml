@@ -1,0 +1,20 @@
+name = "baby-outlet-promotion"
+main = "src/worker.js"
+compatibility_date = "2026-10-01"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "baby-outlet-promotions"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+
+[[r2_buckets]]
+binding = "FILES"
+bucket_name = "baby-outlet-promotion-files"
+
+[vars]
+SITE_NAME = "Baby Outlet Promotion Center"
+# Set ADMIN_PASSWORD with: npx wrangler secret put ADMIN_PASSWORD

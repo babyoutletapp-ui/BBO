@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f1c2b3"><title>Baby Outlet Promotions</title><link rel="stylesheet" href="/style.css"></head>
+<body><header class="top"><a class="brand" href="/"><span class="logo">BO</span><span><b>Baby Outlet</b><small>Promotion Center</small></span></a><button id="admin-open" class="outline">Admin</button></header>
+<main>
+<section id="public-view">
+ <div class="hero"><span class="eyebrow">SPECIAL OFFERS</span><h1>Promotions for<br><em>Mommy & Daddy</em></h1><p>Discover the latest offers from Baby Outlet.</p></div>
+ <div class="section-head"><div><h2>Current Promotions</h2><p>សូមស្វាគមន៍មកកាន់កម្មវិធីពិសេសរបស់ Baby Outlet</p></div><span class="pill" id="count">0 offers</span></div>
+ <div id="public-list" class="cards"><div class="empty">Loading promotions…</div></div>
+</section>
+<section id="detail-view" class="hidden"><button id="back" class="text-btn">← Back to promotions</button><div id="detail-content"></div></section>
+<section id="admin-view" class="hidden">
+ <div class="admin-head"><div><span class="eyebrow">PRIVATE AREA</span><h1>Admin Dashboard</h1><p>Manage Baby Outlet promotions</p></div><button id="logout" class="outline hidden">Sign out</button></div>
+ <div id="login-box" class="box login"><h2>Admin sign in</h2><p>Enter your admin password to continue.</p><form id="login-form"><input id="password" type="password" placeholder="Admin password" required><button class="primary">Sign in</button></form><div id="login-error" class="error"></div></div>
+ <div id="admin-panel" class="hidden">
+  <div class="stats"><div class="stat"><b id="stat-total">0</b><span>Total promotions</span></div><div class="stat"><b id="stat-live">0</b><span>Published</span></div><div class="stat"><b id="stat-draft">0</b><span>Drafts</span></div></div>
+  <div class="box"><h2 id="form-heading">Add a promotion</h2><form id="promo-form" class="form-grid">
+   <label>Promotion title / ឈ្មោះកម្មវិធី<input name="title" required placeholder="e.g. Black Friday Sale"></label>
+   <label>Description / ព័ត៌មានលម្អិត<textarea name="description" rows="3" placeholder="Short promotion details…"></textarea></label>
+   <div class="two"><label>Start date / ថ្ងៃចាប់ផ្ដើម<input name="starts_at" type="date" required></label><label>End date / ថ្ងៃបញ្ចប់<input name="ends_at" type="date" required></label></div>
+   <label class="upload">Poster or PDF / រូបភាព ឬ PDF<input name="file" type="file" accept=".jpg,.jpeg,.png,.pdf,image/jpeg,image/png,application/pdf"><small>JPG, PNG or PDF · Maximum 15 MB. Required for new promotions.</small></label>
+   <div id="file-current" class="muted"></div><div id="form-error" class="error"></div>
+   <div class="actions"><button class="primary" id="save-promo">Save draft</button><button type="button" class="outline hidden" id="cancel-edit">Cancel edit</button></div>
+  </form></div>
+  <div class="box"><div class="section-head"><h2>Manage promotions</h2><button id="refresh" class="outline">Refresh</button></div><div id="admin-list" class="admin-list"></div></div>
+  <div class="box"><h2>Master QR Code / QR សរុប</h2><p class="muted">Print this QR code for customers. It always opens the live promotions page.</p><div class="qr-wrap"><div id="master-qr"></div><div><b>Baby Outlet – All Promotions</b><p class="muted">Scan to see current offers.</p><button class="outline" id="download-master">Download QR PNG</button></div></div></div>
+ </div>
+</section>
+</main>
+<footer>Baby Outlet · Made for Mommy & Daddy <span>🤍</span></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script><script src="/app.js"></script></body></html>

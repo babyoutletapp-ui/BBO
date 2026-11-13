@@ -1,0 +1,15 @@
+{
+  "name": "baby-outlet-promotion",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:create": "wrangler d1 create baby-outlet-promotions",
+    "db:init": "wrangler d1 execute baby-outlet-promotions --remote --file=./schema.sql",
+    "r2:create": "wrangler r2 bucket create baby-outlet-promotion-files"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
