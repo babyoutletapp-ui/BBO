@@ -8,8 +8,8 @@ binding = "ASSETS"
 
 [[d1_databases]]
 binding = "DB"
-database_name = "baby-outlet-promotions"
-database_id = "REPLACE_WITH_D1_DATABASE_ID"
+database_name = "cff-promotions"
+database_id = "506bc75e-6604-405b-8450-1799555924e9"
 
 [[r2_buckets]]
 binding = "FILES"
